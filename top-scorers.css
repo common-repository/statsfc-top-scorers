@@ -1,0 +1,51 @@
+div.sfc_topscorers table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.sfc_topscorers table thead th {
+    text-transform: uppercase;
+    font-size: small;
+    background-color: silver;
+}
+
+div.sfc_topscorers table tr.sfc_highlight td {
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+div.sfc_topscorers table tr th,
+div.sfc_topscorers table tr td {
+    text-align: left;
+    padding: 2px 5px;
+}
+
+div.sfc_topscorers table tr th.sfc_numeric,
+div.sfc_topscorers table tr td.sfc_numeric {
+    text-align: right;
+}
+
+div.sfc_topscorers table tr td.sfc_team {
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px 20px;
+    line-height: 25px;
+    padding-left: 25px !important;
+}
+
+div.sfc_topscorers div.sfc_footer {
+    display: block !important;
+    opacity: 1 !important;
+    text-align: right;
+    visibility: visible !important;
+}
+
+@media screen and (max-width: 767px) {
+    div.sfc_topscorers {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
